@@ -104,7 +104,6 @@ class User:
             else:
                 for i in range(len(response.json()['response'])):
                     if response.json()['response'][i]['member'] == 1:
-
                         groups_main.remove(group)
                         break
             print(f'Осталось обработать {groups_count} групп')
