@@ -104,10 +104,11 @@ class User:
             else:
                 for i in range(len(response.json()['response'])):
                     if response.json()['response'][i]['member'] == 1:
-                        print(f'Осталось обработать {groups_count} групп')
-                        groups_count -= 1
+
                         groups_main.remove(group)
                         break
+            print(f'Осталось обработать {groups_count} групп')
+            groups_count -= 1
         print()
         print(f'Поиск искомых групп выполнен за {t.work_time()} секунд\n')
         return groups_main, len(groups_main)
