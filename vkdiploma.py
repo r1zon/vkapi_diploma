@@ -6,8 +6,7 @@ from urllib.parse import urlencode
 from pprint import pprint
 import copy
 
-# APP_ID = int(input('Введите APP_ID: '))
-APP_ID = 7334043
+APP_ID = int(input('Введите APP_ID: '))
 
 OUTH_URL = 'https://oauth.vk.com/authorize'
 OUTH_PARAMS = {
@@ -19,8 +18,7 @@ OUTH_PARAMS = {
 }
 print('Перейдите по ссылке ниже, скопируйте access_token и вставьте: ')
 print('?'.join((OUTH_URL, urlencode(OUTH_PARAMS))))
-# token = input()
-token = '86dd461ba73f80884b39e9ae6b6a4d555819a871fc77b1936ca805676de4a849c7c049c3bf410f20cef61'
+token = input()
 
 def main():
     while True:
